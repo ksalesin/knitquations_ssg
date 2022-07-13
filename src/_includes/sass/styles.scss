@@ -1,0 +1,245 @@
+@import 'variables';
+
+body {
+    font-family: $main-font;
+    font-size: $main-font-size;    
+    color: $main-text-color;
+    background-color: $background-color;
+}
+
+a {
+	color: $main-text-color;
+	text-decoration: none;
+}
+
+.hero {    
+    .hero-content {
+		#wordmark {
+			display: block;
+			width: 70%;
+			max-width: 280px;
+			height: auto;
+			margin: auto;
+			margin-top: 100px;
+			margin-bottom: 50px;
+			margin-left: auto;
+			margin-right: auto;
+
+			@include bp(m) {
+				margin-top: 200px;
+				margin-bottom: 100px;
+			}
+		}
+
+		#airplane {
+			float: right;
+			width: 60px;
+			height: 60px;
+			background-image: url("https://cs.dartmouth.edu/~ksalesin/files/site/airplane-closed.png");
+			background-size: 100% 100%;
+			margin-left: 20px;
+
+			&:hover {
+				background-image: url("https://cs.dartmouth.edu/~ksalesin/files/site/airplane-open.png");
+			}
+		}
+
+		.nav {
+			text-align: center;
+		}
+    }
+}
+
+.spacer {
+	padding: 10px;
+}
+
+.hz-link-list {
+	padding-left: 0;
+	list-style: none;
+
+	li {
+		@include title-font;
+		display: inline-block;
+		min-width: 50px;
+		text-align: center;
+		line-height: 3rem;
+	}
+
+	.zap-link {
+		margin: 0px;
+		padding: 5px 10px;
+	}
+}
+
+.section {
+	box-sizing: border-box;
+	padding: 10px;
+
+	@include bp(l) {
+		max-width: 992px;
+		margin: auto;
+		margin-bottom: 100px;
+		padding: 0px;
+	}
+
+	h1 {
+		@include title-font;
+		margin-bottom: 10px;
+		font-size: 1.5rem;
+		text-align: center;
+	}
+
+	p {
+		line-height: 2rem;
+	}
+
+	.hr {
+		max-width: 300px;
+		margin: auto;
+		border: 1.5px solid white;
+	}
+}
+
+.grid {
+	margin-top: 20px;
+
+	.grid-item-container {
+		box-sizing: border-box;
+		float: left;
+		width: 100%;
+
+		@include transition(0.5s);
+
+		@include bp(s) {
+			width: 50%;
+		}
+
+		@include bp(m) {
+			width: 25%;
+		}
+	}
+
+	.grid-item {
+		box-sizing: border-box;
+		margin: 20px;
+		padding-bottom: 5px;
+
+		@include transition(0.5s);
+
+		.grid-text {
+			text-align: center;
+			line-height: 1.75rem;
+
+			.title {
+				margin-top: 10px;
+				margin-bottom: 0px;
+				padding-left: 10px;
+				padding-right: 10px;
+
+				@include title-font;
+				font-size: 1.4rem;
+			}
+
+			.subtitle {
+				margin-top: 5px;
+				padding-left: 10px;
+				padding-right: 10px;
+				font-size: 1rem;
+				font-weight: 100;
+				// font-style: italic;
+				line-height: 1rem;
+				color: mix($main-text-color, $background-color, 60%);
+			}
+
+			.subtitle-2 {
+				margin-top: -10px;
+				padding-left: 10px;
+				padding-right: 10px;
+				font-size: 1rem;
+				font-weight: 100;
+				// font-style: italic;
+				line-height: 1rem;
+				color: mix($main-text-color, $background-color, 40%);
+			}
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			aspect-ratio: 1;
+			margin: auto;
+			object-fit: cover;
+		}
+	}
+}
+
+.grid-item-container-1 {
+	&:hover {
+		background-color: mix($water, $background-color, 50%);
+		box-shadow: 0px 0px 15px #cccccc;
+
+		.grid-item-1 {
+			background-color: $water;
+			box-shadow: 0px 0px 10px mix(#cccccc, $water, 50%);
+		}
+	}	
+}
+
+/* Zap effect */
+.zap-link {
+	position: relative;
+	margin: 0px 5px;
+	padding-top: 0px;
+	padding-left: 5px;
+	padding-bottom: 3px;
+	padding-right: 5px;
+	color: $main-text-color;
+    text-decoration: none;
+	white-space: nowrap;
+}
+
+.zap-link-border {
+	display: block;
+	position: absolute;
+	top: -3px; right: -3px; bottom: -3px; left: -3px;
+	border: 3px solid white;
+	@include clippath(polygon(0% 0%, 0% 100%, 76% 100%, 25% 25%, 75% 25%, 75% 75%, 58% 75%, 76% 100%, 100% 100%, 100% 0%));	
+}
+
+.zap-link-in {
+	@include bp(m) {
+		@include animation(zap-link-anim 0.5s 0.1s forwards);
+	}
+}
+
+.zap-link-out {
+	@include bp(m) {
+		@include animation(zap-link-anim-out 0.5s 0s forwards);
+	}
+}
+
+@keyframes zap-link-anim {
+	0% { @include clippath(polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 74% 75%, 24% 76%, 24% 100%, 100% 100%, 100% 0%)); border-color: white;}
+	30% { @include clippath(polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 74% 75%, 74% 75%, 73% 100%, 100% 100%, 100% 0%)); border-color: $lime;}
+	40% { @include clippath(polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 73% 24%, 74% 25%, 74% 24%, 100% 24%, 100% 0%)); border-color: $turq;}
+	60% { @include clippath(polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 25% 25%, 25% 26%, 26% 25%, 26% 25%, 25% 26%, 26% 0)); border-color: $turq;}
+	80% { @include clippath(polygon(0 75%, 0% 100%, 25% 100%, 25% 76%, 24% 75%, 25% 76%, 25% 75%, 24% 75%, 25% 76%, 26% 75%)); border-color: $violet;}
+	100% { @include clippath(polygon(19% 76%, 18% 100%, 81% 100%, 81% 74%, 79% 75%, 80% 75%, 80% 75%, 80% 75%, 80% 76%, 79% 75%)); border-color: $fuschia;}
+}
+
+@keyframes zap-link-anim-out {
+	0% { @include clippath(polygon(19% 76%, 18% 100%, 81% 100%, 81% 74%, 79% 75%, 80% 75%, 80% 75%, 80% 75%, 80% 76%, 79% 75%)); border-color: $fuschia;}
+	20% { @include clippath(polygon(0 75%, 0% 100%, 25% 100%, 25% 76%, 24% 75%, 25% 76%, 25% 75%, 24% 75%, 25% 76%, 26% 75%)); border-color: $violet;}
+	40% { @include clippath(polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 25% 25%, 25% 26%, 26% 25%, 26% 25%, 25% 26%, 26% 0)); border-color: $turq;}
+	60% { @include clippath(polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 73% 24%, 74% 25%, 74% 24%, 100% 24%, 100% 0%)); border-color: $turq;}
+	70% { @include clippath(polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 74% 75%, 74% 75%, 73% 100%, 100% 100%, 100% 0%)); border-color: $lime;}
+	100% { @include clippath(polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 74% 75%, 24% 76%, 24% 100%, 100% 100%, 100% 0%)); border-color: white;}
+}
+
+footer {
+    width: 100%;
+	padding-top: 100px;
+	clear: both;
+    text-align: center;
+}

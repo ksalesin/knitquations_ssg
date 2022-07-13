@@ -1,9 +1,44 @@
 {% extends "layouts/_common.njk" %}
 
 {% block main %}
-    <!-- nunjucks reads this from the content (below the yaml) of about.html -->
-    <div>
-        <h1>Test</h1>
+    <div class="hero">
+        <div class="section hero-content">
+            <img id="wordmark" src="/files/site/kq-wordmark.svg">
+
+            <ul class="hz-link-list nav">
+                <a class="zap-link" href="#"><li><span class="zap-link-border"></span>about me</li></a>
+                <a class="zap-link" href="#"><li><span class="zap-link-border"></span>patterns</li></a>
+                <a class="zap-link" href="#"><li><span class="zap-link-border"></span>blog</li></a>
+            </ul>
+        </div>
     </div>
 
+    <div id="patterns" class="section">
+        <h1>pattern highlights</h1>
+        <div class="hr"></div>
+
+        <div class="grid">
+            {% for patt in collections.patterns | reverse %}
+                <a href="#">
+                    <div class="grid-item-container grid-item-container-{{ patt.data.group }}">
+                        <div class="grid-item grid-item-{{ patt.data.group }}">
+                            <img src="{{ patt.data.teaser_image }}">
+                            <div class="grid-text">
+                                <h4 class="title">{{ patt.data.name | lower }}</h4>
+                                <p class="subtitle">{{ patt.data.type | lower }}</p>
+                                <p class="subtitle-2">{{ patt.data.publication | lower }}</p>
+                                {# <p class="subtitle-2">{{ patt.data.publication | lower }}</p> #}
+
+                                <ul class="hz-link-list">
+                                    {% if pub.data.rav_link %}
+                                        <a class="zap-link" href="{{ pub.data.rav_link }}" target="_blank"><li><span class="zap-link-border"></span>Buy on Ravelry</li></a>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}
