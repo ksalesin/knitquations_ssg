@@ -1,0 +1,22 @@
+{% extends "layouts/_common.njk" %}
+
+{% block main %}
+    <div class="section pattern">
+        <div class="pattern-gallery">
+           <img src="{{ teaser_image }}">
+           <img src="{{ teaser_image }}">
+           <img src="{{ teaser_image }}">
+        </div>
+
+        <div class="pattern-text">
+            <h1>{{ page_title | lower }}</h1>
+            <div class="hr"></div>
+
+            {{ content | safe }}
+
+            <div class="buy">
+                <a class="zap-link extra-pad" href="{{ rav_link }}" target="_blank"><span class="zap-link-border"></span>buy on ravelry</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

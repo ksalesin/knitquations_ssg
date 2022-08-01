@@ -3,10 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>&nbsp;</title>
+        <title>{{ page_title | lower }}</title>
         <link rel="icon" type="image/x-icon" href="/files/site/kq.ico"/>
         <!-- Fonts --><link rel="stylesheet" href="https://use.typekit.net/lyz8kva.css">
-        <link rel="stylesheet" href="_includes/css/styles.css?ver={{ _site_data.styling_version }}">
+        <link rel="stylesheet" href="/_includes/css/styles.css?ver={{ _site_data.styling_version }}">
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="knitquations" />
+        <meta property="og:url" content="https://www.knitquations.com" />
+        <meta property="og:title" content="{{ page_title }}" />
+        <meta property="og:description" content="{{ teaser_text }}" />
+        <meta property="og:image" content="https://www.knitquations.com{{ teaser_image }}" />
     </head>
 
     <body>

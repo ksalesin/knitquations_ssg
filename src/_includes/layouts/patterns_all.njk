@@ -2,13 +2,13 @@
 
 {% block main %}
     <div id="patterns" class="section">
-        <h1>featured patterns</h1>
+        <h1>patterns</h1>
         <div class="hr"></div>
 
         <div class="grid">
-            {% for pattern in collections.featured | reverse %}
+            {% for pattern in collections.patterns | reverse %}
                 <a href="{{ pattern.url }}">
-                    <div class="featured-item-container grid-item-container-{{ pattern.data.group }}">
+                    <div class="grid-item-container grid-item-container-{{ pattern.data.group }}">
                         <div class="grid-item grid-item-{{ pattern.data.group }}">
                             <img src="{{ pattern.data.teaser_image }}">
                             <div class="grid-text">
