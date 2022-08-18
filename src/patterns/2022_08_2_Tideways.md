@@ -7,12 +7,37 @@ group: 1
 date_fancy: "August 2022"
 date: "2022-08"
 rav_link: "#"
-teaser_image: "/files/vol1_water/wake_1.jpg"
-teaser_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut congue lacus. Mauris lacinia hendrerit dolor ut maximus. Aliquam rhoncus sapien a velit tempus, molestie malesuada mauris laoreet."
+image1: "/files/vol1_water/tideways_1.jpg"
+image2: "/files/vol1_water/tideways_2.jpg"
+image3: "/files/vol1_water/tideways_3.jpg"
+teaser_text: "Trace each brioche ridge in Tideways and discover that each follows a unique path, splitting and merging to form strands of this shared braid cable. The dramatic ebb and flow of this fabric is formed by just one deceptively simple cable cross (flipped left and right)."
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut congue lacus. Mauris lacinia hendrerit dolor ut maximus. Aliquam rhoncus sapien a velit tempus, molestie malesuada mauris laoreet. Sed ac orci mi. Curabitur vitae tempor mauris, a aliquam arcu. Sed urna libero, ornare a mollis ut, hendrerit eget lacus. Etiam gravida tempor ultrices. Aliquam consectetur maximus posuere. Nullam luctus mauris et metus mattis placerat. In quis vulputate risus. Sed a ex sem.
+<p>Trace each brioche ridge in Tideways and discover that each follows a unique path, splitting and merging to form strands of this shared braid cable. The dramatic ebb and flow of this fabric is formed by just one deceptively simple cable cross (flipped left and right).</p>
 
-Morbi id dolor suscipit metus ullamcorper lobortis. Proin rutrum, eros venenatis dapibus suscipit, massa mi elementum eros, ac auctor tortor diam malesuada urna. Suspendisse potenti. Nunc euismod tellus purus, eget facilisis urna mollis vitae. Pellentesque nisl leo, elementum a viverra ut, commodo vel risus. Praesent ac dignissim arcu, vel fermentum ligula. Cras luctus, nisl eu efficitur fringilla, neque nunc accumsan arcu, vel posuere dolor massa quis turpis.
+<p>This scarf is worked flat, repeating a simple cable chart up to the desired length. The cable pattern is provided in both written and charted form.</p>
 
-Donec arcu ex, semper ut orci mollis, iaculis pharetra eros. Etiam vitae est vel nulla rhoncus volutpat non eu leo. Duis in odio quis nulla ullamcorper blandit a eu nibh. Praesent purus massa, accumsan eget quam ut, ultricies egestas nulla. In in imperdiet arcu. Morbi ultricies iaculis tincidunt. Pellentesque id maximus nibh, ac elementum neque. Vivamus sagittis dictum ornare. Nunc nunc massa, commodo sit amet molestie in, maximus ac metus. Proin tempus, dui eget egestas vestibulum, turpis felis rhoncus quam, a congue tellus risus sed turpis. Curabitur ut dui non dolor semper faucibus a vel nulla.
+<p><strong>Skill Level</strong><br>
+Appropriate for a knitter who is proficient in basic cable knitting and curious to try brioche, or vice versa</p>
+
+<p><strong>Techniques</strong><br>
+Required: Brioche knitting, cable knitting<br>
+<em>Optional: Reading charts, rib cabled cast on (instructions provided)</em></p>
+
+<p><strong>Yarn</strong><br>
+Approximately 500–700 yards/460–640 meters of worsted weight yarn, depending on desired length<br>
+Sample was knit with 550 yards/500 meters (3 skeins) of The Alpaca Yarn Company Astral, in color Gemini</p>
+
+<p><strong>Gauge</strong><br>
+Meeting gauge is not terribly important for this project – any needle size toward the smaller end of the recommended range for the chosen yarn will do.<br>
+Each 45-stitch, 16-row repeat of the cable pattern measures 7”/18 cm wide by 2”/5 cm long.</p>
+
+<p><strong>Needles</strong><br>
+One set of straight needles or one 24”/60 cm or longer circular needle in appropriate size<br>
+Suggested Size: 4.5 mm (US 7)</p>
+
+<p><strong>Dimensions</strong><br>
+7”/18 cm wide by any desired length (recommended: 60–72”/152–183 cm), unblocked</p>
+
+<p><strong>Tools</strong><br>
+Blunt tapestry needle, cable needle</p>

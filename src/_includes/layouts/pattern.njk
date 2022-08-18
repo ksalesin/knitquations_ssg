@@ -3,9 +3,19 @@
 {% block main %}
     <div class="section pattern">
         <div class="pattern-gallery">
-           <img src="{{ teaser_image }}">
-           <img src="{{ teaser_image }}">
-           <img src="{{ teaser_image }}">
+            <img src="{{ image1 }}">
+            {% if image2 %}
+                <img src="{{ image2 }}">
+            {% endif %}
+           {% if image3 %}
+                <img src="{{ image3 }}">
+            {% endif %}
+            {% if image4 %}
+                <img src="{{ image4 }}">
+            {% endif %}
+            {% if image5 %}
+                <img src="{{ image5 }}">
+            {% endif %}
         </div>
 
         <div class="pattern-text">
