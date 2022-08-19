@@ -10,10 +10,10 @@ rav_link: "#"
 image1: "/files/vol1_water/tideways_1.jpg"
 image2: "/files/vol1_water/tideways_2.jpg"
 image3: "/files/vol1_water/tideways_3.jpg"
-teaser_text: "Trace each brioche ridge in Tideways and discover that each follows a unique path, splitting and merging to form strands of this shared braid cable. The dramatic ebb and flow of this fabric is formed by just one deceptively simple cable cross (flipped left and right)."
+teaser_text: "Trace each brioche ridge in Tideways and discover that each slips between strands of this sinuous braid cable. The dramatic ebb and flow of fabric is formed by just two deceptively simple cable crosses."
 ---
 
-<p>Trace each brioche ridge in Tideways and discover that each follows a unique path, splitting and merging to form strands of this shared braid cable. The dramatic ebb and flow of this fabric is formed by just one deceptively simple cable cross (flipped left and right).</p>
+<p>Trace each brioche ridge in Tideways and discover that each slips between strands of this sinuous braid cable. The dramatic ebb and flow of fabric is formed by just two deceptively simple cable crosses.</p>
 
 <p>This scarf is worked flat, repeating a simple cable chart up to the desired length. The cable pattern is provided in both written and charted form.</p>
 
