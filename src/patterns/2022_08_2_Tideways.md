@@ -6,7 +6,7 @@ publication: "Vol. 1: Water"
 group: 1
 date_fancy: "August 2022"
 date: "2022-08"
-rav_link: "#"
+rav_link: "https://www.ravelry.com/patterns/library/tideways"
 image1: "/files/vol1_water/tideways_1.jpg"
 image2: "/files/vol1_water/tideways_2.jpg"
 image3: "/files/vol1_water/tideways_3.jpg"
